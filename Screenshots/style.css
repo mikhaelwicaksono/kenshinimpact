@@ -1,0 +1,203 @@
+/*SCREENSHOTS*/
+
+
+body{
+    margin: 0;
+    background-image: url(../assets/5.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.navigation{
+    background-color: rgb(204, 204, 204);
+    color :black;
+    background-size: 100px;
+    display: inline-flex;
+    width: 100%; 
+}
+
+img.logo{
+    width: 200px;
+    float: right;
+    padding: 10px;
+    margin: 0;
+}
+
+.drpbutton{
+    background-color: rgb(204, 204, 204);
+    color: black;
+    padding: 10px;
+    margin-left: 20px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+    border-bottom-left-radius: 12px;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.drp-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    margin-top: 10px;
+    min-width: 160px;
+    box-shadow: 3px 2px 8px 5px rgba(0,0,0,0.23);
+    z-index: 1;
+}
+
+.drp-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Lucida Sans';
+}
+
+.drp-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .drp-content{
+    display: block;
+}
+
+.dropdown:hover .drpbutton{
+    background-color: white;
+}
+
+
+.download{
+    color: white; 
+    font-size: 20px; 
+    line-height: 18px;
+    padding: 30px; 
+    border: none;
+    margin: 0;
+    text-transform: none; 
+    background-color: #FF0000; 
+    position: absolute; 
+    display: inline-block;
+    right: 0;
+}
+
+.download:active {
+    background: #ce0000; }
+
+.header{
+    display: flex;
+    margin-top: 113px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 113px;
+}
+
+@media only screen and (max-width: 1000px){
+.gallery{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.img_lol{
+    width: auto;
+    height: 400px;
+}
+.img-thing{
+    width: 400px;
+}
+
+}
+
+@media only screen and (min-width: 1000px){
+    .gallery{
+        width: auto;
+    }
+    .img_lol{
+        width: 400px;
+    }
+    .img-thing{
+        width: 50px;
+    }
+}
+
+.img{
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 1000px){
+    .footer{
+        background-image: -moz-linear-gradient( 90deg, rgb(209,211,212) 0%, rgb(165,167,168) 100%);
+        background-image: -webkit-linear-gradient( 90deg, rgb(209,211,212) 0%, rgb(165,167,168) 100%);
+        background-image: -ms-linear-gradient( 90deg, rgb(209,211,212) 0%, rgb(165,167,168) 100%);
+        display: flex;
+        text-align: center;
+        color: black;
+        justify-content: space-evenly;
+        z-index: 1;
+        position: static;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .footer{
+        background-image: -moz-linear-gradient( 90deg, rgb(209,211,212) 0%, rgb(165,167,168) 100%);
+        background-image: -webkit-linear-gradient( 90deg, rgb(209,211,212) 0%, rgb(165,167,168) 100%);
+        background-image: -ms-linear-gradient( 90deg, rgb(209,211,212) 0%, rgb(165,167,168) 100%);
+        display: flex;
+        text-align: center;
+        color: black;
+        justify-content: space-evenly;
+        z-index: 1;
+        position: static;
+    }
+}
+
+
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-row{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    
+}
+
+.logo2{
+    width:300px;
+}
+
+.copy{
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 20px;
+}
+
+.sosmed{
+    width: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.platform{
+    align-content: center;
+    width: 150px;
+    padding: 15px;
+}
+
+.row{
+    margin: auto;
+}

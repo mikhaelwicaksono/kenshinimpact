@@ -1,0 +1,279 @@
+/* Homepage */
+
+
+body{
+    margin: 0;
+    background-color: #333333;
+    font-family: Helvetica;
+    background-image: url(./SeventhHeavenBackground.jpg);
+    background-size: cover;
+}
+
+.navigation{
+    background-color: rgb(204, 204, 204);
+    color :black;
+    background-size: 100px;
+    /*display: flex;
+    flex-direction: column;*/
+    display: inline-flex;
+    width: 100%; 
+    
+}
+
+img.logo{
+    width: 200px;
+    float: right;
+    padding: 10px;
+    margin: 0;
+}
+
+.drpbutton{
+    background-color: rgb(204, 204, 204);
+    color: black;
+    padding: 10px;
+    margin-left: 20px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+    border-bottom-left-radius: 12px;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.drp-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 3px 2px 8px 5px rgba(0,0,0,0.23);
+    z-index: 1;
+    margin-top: 10px;
+}
+
+.drp-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Lucida Sans';
+}
+
+.drp-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .drp-content{
+    display: block;
+}
+
+.dropdown:hover .drpbutton{
+    background-color: white;
+}
+
+.download{
+    color: white; 
+    font-size: 20px; 
+    line-height: 18px;
+    padding: 30px; 
+    border: none;
+    margin: 0;
+    text-transform: none; 
+    background-color: #FF0000; 
+    position: absolute; 
+    display: inline-block;
+    right: 0;
+}
+
+.download:active {
+    background: #ce0000; }
+
+.download-now{
+    background: url(./Qixing\ Redwood.jpg);
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    position: relative;
+    align-content: center;
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+    padding: 15%;
+}
+
+.lower-content{
+    margin-bottom: 100px;
+}
+
+.news-item{
+    min-height: 500px;
+    min-width: 500px;
+}
+
+.logo-kenshin{
+    margin: auto;
+  width: 40%;
+  padding: 10px;
+}
+
+.down-load-icon{
+    margin: auto;
+    width: 40%;
+    justify-content: center;
+    display: flex;
+}
+
+.explore-world{
+    text-align: center;
+    justify-content: center;
+}
+
+.title-world{
+    font-size: 55px;
+    font-family: 'Lucida Sans';
+}
+
+p.chars{
+    margin: 20px;
+}
+
+.title-news{
+    color: white;
+    font-size: 55px;
+    text-align: center;
+    font-family: 'Lucida Sans';
+}
+.news-container{
+    display: flex;
+    justify-content: center;
+    height: 360px;
+}
+.news-item{
+    background-size: contain;
+    display: none;
+    width: 900px;
+    background-repeat: no-repeat;
+}
+
+.news-item.active{
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1000px){
+    .chars{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        color: white;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+
+.chars{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    text-align: center;
+}
+}
+
+
+.char-img{
+    width: 500px;
+}
+.title-world{
+    text-align: center;
+    color: white;
+}
+.chars{
+    font-size: 25px;
+}
+
+.btn-chars{
+    font-size: 25px;
+    background-color: rgba(51,153,102,0);
+    border: none;
+    color: red;
+    font-style: none;
+}
+
+.btn-chars:active{
+    color: white;;
+}
+    
+@media only screen and (max-width: 1000px){
+    .footer{
+        background-image: -moz-linear-gradient( 90deg, rgb(209,211,212) 0%, rgb(165,167,168) 100%);
+        background-image: -webkit-linear-gradient( 90deg, rgb(209,211,212) 0%, rgb(165,167,168) 100%);
+        background-image: -ms-linear-gradient( 90deg, rgb(209,211,212) 0%, rgb(165,167,168) 100%);
+        display: flex;
+        text-align: center;
+        color: black;
+        justify-content: space-evenly;
+        z-index: 1;
+        position: static;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .footer{
+        background-image: -moz-linear-gradient( 90deg, rgb(209,211,212) 0%, rgb(165,167,168) 100%);
+        background-image: -webkit-linear-gradient( 90deg, rgb(209,211,212) 0%, rgb(165,167,168) 100%);
+        background-image: -ms-linear-gradient( 90deg, rgb(209,211,212) 0%, rgb(165,167,168) 100%);
+        display: flex;
+        text-align: center;
+        color: black;
+        justify-content: space-evenly;
+        z-index: 1;
+        position: static;
+    }
+}
+
+
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-row{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    
+}
+
+.logo2{
+    width:300px;
+}
+
+.copy{
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 20px;
+}
+
+.sosmed{
+    width: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.platform{
+    align-content: center;
+    width: 150px;
+    padding: 15px;
+}
+
+.row{
+    margin: auto;
+}
